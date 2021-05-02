@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roksor</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500;600&amp;display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">Отзывы о компании ООО “Ковалевский”</h1>
+
+      <section class="rate">
+        <h2 class="rate__title">Общий рейтинг компании</h2>
+        <div class="rate__articles">
+          <div class="rating">
+            <p class="rating__number">4.8<span>&nbsp/&nbsp;5</span></p>
+            <div class="rating__stars" style="--rating: 4.5"></div>
+            <p class="rating__text">6 отзывов</p>
+          </div>
+
+          <ul class="bars">
+            <li class="bar">
+              <p class="bar__text">Скорость работы</p>
+              <div class="bar__line">
+                <div class="bar__color_type-1"></div>
+              </div>
+              <p class="bar__number">4.8</p>
+            </li>
+            <li class="bar">
+              <p class="bar__text">Качество обслуживания</p>
+              <div class="bar__line">
+                <div class="bar__color_type-2"></div>
+              </div>
+              <p class="bar__number">3.1</p>
+            </li>
+            <li class="bar">
+              <p class="bar__text">Ценовая политика</p>
+              <div class="bar__line">
+                <div class="bar__color_type-3"></div>
+              </div>
+              <p class="bar__number">1.6</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="info">
+          <img
+            src="<%=require('../images/user.svg').default%>"
+            class="info__img"
+          />
+          <div class="profile">
+            <p class="profile__name">Александр</p>
+            <div class="profile__status"><span>Опытный</span></div>
+            <div class="profile__state">
+              <img
+                src="<%=require('../images/ukraine.png').default%>"
+                class="profile__countryball"
+              />
+              <p class="profile__country">Украина</p>
+            </div>
+            <p class="profile__date">23.02.2019 в 15:06</p>
+            <img
+              src="<%=require('../images/star.svg').default%>"
+              class="profile__star"
+            />
+            <p class="profile__number">5</p>
+            <img
+              src="<%=require('../images/submenu.svg').default%>"
+              class="profile__menu"
+            />
+          </div>
+          <div class="shop">
+            <p class="shop__message">235 сообщений</p>
+            <img
+              src="<%=require('../images/ellipse.svg').default%>"
+              class="shop__stop"
+            />
+            <p class="shop__text">&nbsp;</p>
+            <a href="#">Перейти</a>
+          </div>
+        </div>
+        <div class="paragraph">
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/dignity.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__positive"
+            >
+              Достоинства
+            </p>
+            <p>
+              Предназначен для опытных инвесторов они смогут совершать сделки на
+              бирже и видеть всю информацию о торгах сразу на нескольких
+              экранах, в любом браузере и на любом количестве устройств.
+              Предназначен для опытных инвесторов.
+            </p>
+          </div>
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/flaw.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__negative"
+            >
+              Недостатки
+            </p>
+            <p>Предназначен для опытных инвесторов.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__answer">Ответить</button>
+          <div class="buttons__like">
+            <img
+              src="<%=require('../images/up.png').default%>"
+              class="buttons__like-img"
+            /><span>23</span>
+          </div>
+          <div class="buttons__dislike">
+            <img
+              src="<%=require('../images/dislike.svg').default%>"
+              class="buttons__dislike-img"
+            /><span>10</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="info">
+          <img
+            src="<%=require('../images/user3.png').default%>"
+            class="info__img"
+          />
+          <div class="profile">
+            <p class="profile__name">Вера</p>
+            <div
+              style="border-color: red; padding: 0 7px 0"
+              class="profile__status"
+            >
+              <span style="color: red">Заблокирован</span>
+            </div>
+            <div class="profile__state">
+              <img
+                src="<%=require('../images/ukraine.png').default%>"
+                class="profile__countryball"
+              />
+              <p class="profile__country">Украина</p>
+            </div>
+            <p class="profile__date">23.02.2019 в 15:06</p>
+            <img
+              src="<%=require('../images/star.svg').default%>"
+              class="profile__star"
+            />
+            <p class="profile__number">5</p>
+            <img
+              src="<%=require('../images/submenu.svg').default%>"
+              class="profile__menu"
+            />
+          </div>
+          <div class="shop">
+            <p class="shop__message">235 сообщений</p>
+            <img
+              src="<%=require('../images/ellipse.svg').default%>"
+              class="shop__stop"
+            />
+            <p class="shop__text">&nbsp;</p>
+            <a href="#">Перейти</a>
+          </div>
+        </div>
+        <div class="paragraph">
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/dignity.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__positive"
+            >
+              Достоинства
+            </p>
+            <p>
+              Предназначен для опытных инвесторов они смогут совершать сделки на
+              бирже и видеть всю информацию о торгах сразу на нескольких
+              экранах, в любом браузере и на любом количестве устройств.
+              Предназначен для опытных инвесторов.
+            </p>
+          </div>
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/flaw.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__negative"
+            >
+              Недостатки
+            </p>
+            <p>Предназначен для опытных инвесторов.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__answer">Ответить</button>
+          <div class="buttons__like">
+            <img
+              src="<%=require('../images/up.png').default%>"
+              class="buttons__like-img"
+            /><span>23</span>
+          </div>
+          <div class="buttons__dislike">
+            <img
+              src="<%=require('../images/dislike.svg').default%>"
+              class="buttons__dislike-img"
+            /><span>10</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="info">
+          <img
+            src="<%=require('../images/user2.png').default%>"
+            class="info__img"
+          />
+          <div class="profile">
+            <p class="profile__name">Саманта</p>
+            <div class="profile__status"><span>Опытный</span></div>
+            <div class="profile__state">
+              <img
+                src="<%=require('../images/ukraine.png').default%>"
+                class="profile__countryball"
+              />
+              <p class="profile__country">Украина</p>
+            </div>
+            <p class="profile__date">23.02.2019 в 15:06</p>
+            <img
+              src="<%=require('../images/star.svg').default%>"
+              class="profile__star"
+            />
+            <p class="profile__number">5</p>
+            <img
+              src="<%=require('../images/submenu.svg').default%>"
+              class="profile__menu"
+            />
+          </div>
+          <div class="shop">
+            <p class="shop__message">235 сообщений</p>
+            <img
+              src="<%=require('../images/ellipse.svg').default%>"
+              class="shop__stop"
+            />
+            <p class="shop__text">&nbsp;</p>
+            <a href="#">Перейти</a>
+          </div>
+        </div>
+        <div class="paragraph">
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/dignity.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__positive"
+            >
+              Достоинства
+            </p>
+            <p>
+              Предназначен для опытных инвесторов они смогут совершать сделки на
+              бирже и видеть всю информацию о торгах сразу на нескольких
+              экранах, в любом браузере и на любом количестве устройств.
+              Предназначен для опытных инвесторов.
+            </p>
+          </div>
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/flaw.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__negative"
+            >
+              Недостатки
+            </p>
+            <p>Предназначен для опытных инвесторов.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__answer">Ответить</button>
+          <div class="buttons__like">
+            <img
+              src="<%=require('../images/up.png').default%>"
+              class="buttons__like-img"
+            /><span>23</span>
+          </div>
+          <div class="buttons__dislike">
+            <img
+              src="<%=require('../images/down.svg').default%>"
+              class="buttons__dislike-img"
+            /><span>10</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="info">
+          <img
+            src="<%=require('../images/user1.png').default%>"
+            class="info__img"
+          />
+          <div class="profile">
+            <p class="profile__name">Анна</p>
+            <div class="profile__status"><span>Опытный</span></div>
+            <div class="profile__state">
+              <img
+                src="<%=require('../images/ukraine.png').default%>"
+                class="profile__countryball"
+              />
+              <p class="profile__country">Украина</p>
+            </div>
+            <p class="profile__date">23.02.2019 в 15:06</p>
+            <img
+              src="<%=require('../images/star.svg').default%>"
+              class="profile__star"
+            />
+            <p class="profile__number">5</p>
+            <img
+              src="<%=require('../images/submenu.svg').default%>"
+              class="profile__menu"
+            />
+          </div>
+          <div class="shop">
+            <p class="shop__message">235 сообщений</p>
+            <img
+              src="<%=require('../images/ellipse.svg').default%>"
+              class="shop__stop"
+            />
+            <p class="shop__text">&nbsp;<a href="#">Перейти</a></p>
+          </div>
+        </div>
+        <div class="paragraph">
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/dignity.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__positive"
+            >
+              Достоинства
+            </p>
+            <p>
+              Предназначен для опытных инвесторов они смогут совершать сделки на
+              бирже и видеть всю информацию о торгах сразу на нескольких
+              экранах, в любом браузере и на любом количестве устройств.
+              Предназначен для опытных инвесторов.
+            </p>
+          </div>
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/flaw.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__negative"
+            >
+              Недостатки
+            </p>
+            <p>Предназначен для опытных инвесторов.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__answer">Ответить</button>
+          <div class="buttons__like">
+            <img
+              src="<%=require('../images/up.svg').default%>"
+              class="buttons__like-img"
+            /><span>23</span>
+          </div>
+          <div class="buttons__dislike">
+            <img
+              src="<%=require('../images/dislike.svg').default%>"
+              class="buttons__dislike-img"
+            /><span>10</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="info">
+          <img
+            src="<%=require('../images/user4.png').default%>"
+            class="info__img"
+          />
+          <div class="profile">
+            <p class="profile__name">Анатолий</p>
+            <div class="profile__status"><span>Опытный</span></div>
+            <div class="profile__state">
+              <img
+                src="<%=require('../images/ukraine.png').default%>"
+                class="profile__countryball"
+              />
+              <p class="profile__country">Украина</p>
+            </div>
+            <p class="profile__date">23.02.2019 в 15:06</p>
+            <img
+              src="<%=require('../images/star.svg').default%>"
+              class="profile__star"
+            />
+            <p class="profile__number">5</p>
+            <img
+              src="<%=require('../images/submenu.svg').default%>"
+              class="profile__menu"
+            />
+          </div>
+          <div class="shop">
+            <p class="shop__message">235 сообщений</p>
+            <img
+              src="<%=require('../images/ellipse.svg').default%>"
+              class="shop__stop"
+            />
+            <p class="shop__text">&nbsp;</p>
+            <a href="#">Перейти</a>
+          </div>
+        </div>
+        <div class="paragraph">
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/dignity.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__positive"
+            >
+              Достоинства
+            </p>
+            <p>
+              Предназначен для опытных инвесторов они смогут совершать сделки на
+              бирже и видеть всю информацию о торгах сразу на нескольких
+              экранах, в любом браузере и на любом количестве устройств.
+              Предназначен для опытных инвесторов.
+            </p>
+          </div>
+          <div class="paragraph__text">
+            <img
+              src="<%=require('../images/flaw.svg').default%>"
+              class="paragraph__text-img"
+            />
+            <p
+              style="font-weight: 600; font-size: 14px; line-height: 22px"
+              class="paragraph__negative"
+            >
+              Недостатки
+            </p>
+            <p>Предназначен для опытных инвесторов.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="buttons__answer">Ответить</button>
+          <div class="buttons__like">
+            <img
+              src="<%=require('../images/up.png').default%>"
+              class="buttons__like-img"
+            /><span>23</span>
+          </div>
+          <div class="buttons__dislike">
+            <img
+              src="<%=require('../images/dislike.svg').default%>"
+              class="buttons__dislike-img"
+            /><span>10</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
