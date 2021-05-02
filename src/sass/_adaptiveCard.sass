@@ -1,0 +1,182 @@
+
+@media (min-width: 768px) and (max-width: 1200px) 
+    .card
+        max-width: 690px
+
+        .info
+            max-width: 630px
+
+            .profile
+                max-width: 565px
+            
+            .shop
+                max-width: 565px
+
+                &__text:before 
+                    width: 290px
+                    content: "Музыкальный магазин “Super Sound”,..."
+        
+
+@media (min-width: 320px) and (max-width: 767px)
+    .card 
+        max-width: 288px
+        padding: 20px 20px 24px 20px
+    
+        .info
+            position: relative
+            max-width: 248px
+            height: 117px
+            margin-bottom: 12px
+
+            &__img
+                position: absolute
+                cursor: pointer
+                width: 40px
+                height: 40px
+
+        .profile
+            max-width: 200px
+            height: 22px
+
+            &__name
+                font-weight: 600
+                font-size: 14px
+                line-height: 22px
+            
+            span
+                font-weight: 600
+                font-size: 10px
+                line-height: 12px
+                color: $color2
+
+            &__state
+                position: absolute
+                top: 27px
+
+            &__countryball
+                width: 14px
+                height: 14px
+                align-self: center
+     
+            
+            &__country
+                margin-left: 3px
+                font-size: 14px
+                line-height: 22px
+                display: flex
+                align-items: center
+                color: $colorTextDarkGray
+                
+
+            &__date
+                position: absolute
+                top: 51px
+
+            &__star
+                position: absolute
+                left: -3px
+                top: 89px
+
+            &__number
+                position: absolute
+                left: 22px
+                top: 84px
+
+            &__menu
+                margin-left: auto
+
+        .shop
+            width: 197px
+            height: 48px
+            position: absolute
+            top: 79px
+
+            &__message
+                display: none
+            
+            &__stop
+               display: none
+
+            &__text:before 
+                    width: 290px
+                    content: "Музыкальный магазин “Super Sound”,..."
+            a
+                display: flex
+                position: absolute
+                top: 23px
+                right: 16px
+        
+        .paragraph
+            margin-bottom: 9px
+
+            &__text
+                flex-direction: row
+                position: relative
+                max-width: 675px
+                min-height: 29px
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 6
+                -webkit-box-orient: vertical
+
+            &__text-img
+                position: relative
+                margin-bottom: 7px
+                width: 16px
+                height: 16px
+            
+            &__positive
+                display: flex
+                position: absolute
+                top: 2px
+                left: 23px
+
+            &__negative
+                display: flex
+                position: absolute
+                top: 2px
+                left: 23px
+
+            p 
+                margin-left: 0px
+                font-size: 14px
+                line-height: 28px
+                color: $colorTextDarkGray
+          
+        .buttons
+            &__answer
+                width: 129px
+                height: 24px
+                margin-right: auto
+                background: #FFF
+                border: none
+                color: #1373E5
+                font-size: 14px
+                line-height: 18px
+                margin-left: -32px
+
+            &__like
+                width: 48px
+                height: 22px
+                margin-right: 18px
+                align-self: flex-end
+
+            &__dislike
+                width: 48px
+                height: 22px
+                align-self: flex-end
+
+            span
+                left: 19px
+                top: -3px
+
+            &__like-img
+                width: 18px
+                height: 18px
+                cursor: pointer
+
+            &__dislike-img
+                width: 18px
+                height: 18px
+                cursor: pointer
